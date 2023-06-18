@@ -1,0 +1,225 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Cambiado a "space-between" */
+  width: 800px; /* Ajusta el ancho según tus necesidades */
+ 
+}
+.login-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  width: 400px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0px; /* Cambiado a 20px para dejar espacio entre los contenedores */
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #0A369D;
+}
+
+.login-container h4 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  border-bottom: 1px solid #0A369D;
+  background-color: transparent;
+  color: #0A369D;
+  outline: none;
+}
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-container button {
+  width: 150px;
+  margin: 10px auto;
+  margin-left: 120px;
+  padding: 10px;
+  border: none;
+  background-color: #0A369D;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.register-container {
+  background-color: #4472CA;
+  width: 450px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.register-container h3,
+.register-container p {
+  margin: 10px 0;
+}
+
+.register-container button {
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.login-container:hover,
+.register-container:hover {
+  transform: scale(1.1); /* Aumentar escala al hacer hover */
+}
+
+/*eeeeeeeeeeeeeeee*/
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+ 
+}
+.login1-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #0A369D;
+}
+
+.login1-container h4 {
+  margin-top: 0px;
+  font-size: 32px;
+  text-align: center; /* Alineación centrada del título */
+}
+
+
+
+.login1-container input[type="text"],
+.login1-container input[type="password"] {
+  width: 300px;
+  margin: 15px;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  border-bottom: 1px solid #0A369D;
+  background-color: transparent;
+  color: #0A369D;
+  outline: none;
+  margin-left: 35px;
+}
+
+.login1-container button {
+  width: 150px;
+  margin: 10px auto;
+  margin-left: 130px;
+  padding: 10px;
+  border: none;
+  background-color: #0A369D;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.register1-container {
+  background-color: #4472CA;
+  width: 450px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.register1-container h3,
+.register1-container p {
+  margin: 10px 0;
+  /*font-size: 30px;  Ajustar tamaño de fuente */
+}
+
+.register1-container button {
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.login1-container:hover,
+.register1-container:hover {
+  transform: scale(1.1); /* Aumentar escala al hacer hover */
+}
+.error-message {
+  color: #0A369D;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.notification-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.notification-content {
+  text-align: center;
+}
+
+.notification-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
